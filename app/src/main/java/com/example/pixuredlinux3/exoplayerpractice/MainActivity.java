@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements AudioManager.OnAu
         userAgent = Util.getUserAgent(this, "MainActivity");
         audioManager = (AudioManager) this.getApplicationContext().getSystemService(Context.AUDIO_SERVICE);
         video_url = "http://playertest.longtailvideo.com/adaptive/bbbfull/bbbfull.m3u8";
-        //video_url = "https://www.youtube.com/watch?v=kpPBHC_Kyks";
+        //video_url = "http://devimages.apple.com/samplecode/adDemo/ad.m3u8";
         hls = new HlsRendererBuilder(surface, exoPlayer, this, userAgent, video_url);
         videoRenderer = hls.getVideoRenderer();
         audioRenderer = hls.getAudioRenderer();
